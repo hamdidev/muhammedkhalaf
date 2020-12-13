@@ -562,6 +562,9 @@ a svg {
   box-shadow: 0 4px 6px rgba(174, 190, 205, 0.3);
   transition: var(--transition);
 }
+.contact__address {
+  color: #03071ec5;
+}
 .contact__box:hover {
   box-shadow: 0 6px 8px rgba(174, 190, 205, 0.4);
 }
