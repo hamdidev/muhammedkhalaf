@@ -449,7 +449,7 @@ a svg {
 }
 
 .project-description {
-  color: var(--first-color-alt);
+  color: var(--text-color-light);
   font-size: 12px;
   padding: 0 1.5rem;
   line-height: 1.4;
