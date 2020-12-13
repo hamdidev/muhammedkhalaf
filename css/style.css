@@ -595,8 +595,6 @@ a svg {
 
 /* Footer */
 .footer {
-  background-color: var(--first-color-alt);
-  color: var(--body-color);
   text-align: center;
 }
 
@@ -618,14 +616,14 @@ a svg {
 
 .footer__links {
   font-size: 1.3rem;
-  color: var(--container-color);
+  color: var(--first-color);
   margin: 0 var(--mb-1);
   transition: 0.3s all;
 }
 .footer__copy {
   font-size: var(--smler-fz);
-  color: var(--container-color);
-  margin-top: 1rem;
+  color: var(--first-color);
+  margin-top: 0.5rem;
 }
 
 /* Media Queries */
