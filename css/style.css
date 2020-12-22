@@ -194,14 +194,13 @@ img {
 }
 .nav__logo {
   z-index: 101;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
-.nav__logo:hover {
-  color: var(--first-color);
-}
 .nav__link {
   transition: all 0.03s;
+  font-size: 0.75rem;
+  letter-spacing: 1.5px;
 }
 .nav__link:hover {
   color: var(--first-color);
@@ -288,11 +287,14 @@ img {
   margin-bottom: var(--mb-4);
 }
 .home__img {
-  width: 300px;
+  width: 350px;
   justify-self: center;
   z-index: 0;
   opacity: 1;
   transition: var(--transition);
+}
+.home__img img {
+  transform: scaleY(-1);
 }
 
 /* Buttons */
@@ -653,6 +655,14 @@ a svg {
     width: 380px;
     order: -1;
   }
+
+  .computer {
+    top: 50%;
+    left: 50%;
+    width: 65%;
+    height: 65%;
+    opacity: 1;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -712,7 +722,7 @@ a svg {
     }
 
     .home__img {
-      width: 600px;
+      width: 500px;
     }
     .home__title {
       font-size: 2.3rem;
@@ -725,22 +735,6 @@ a svg {
       column-gap: 0.5rem;
     }
   }
-}
-
-.home__img #gif {
-  position: absolute;
-  top: 48.5%;
-  left: 50%;
-  width: 77.9%;
-  height: 87%;
-  padding-top: 32%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  background-size: cover;
-  z-index: -15;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  background-image: url("../img/laptop.gif");
 }
 
 /* About-Stuff */
@@ -764,4 +758,43 @@ a svg {
   top: -8px;
   color: var(--first-color);
   font-size: 1.4rem;
+}
+
+.computer {
+  position: fixed;
+  top: 50%;
+  left: 70%;
+  width: 65%;
+  height: 65%;
+  opacity: 1;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
+  z-index: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.computer #gif {
+  position: absolute;
+  top: 48.5%;
+  left: 50%;
+  width: 50%;
+  padding-top: 32%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-size: cover;
+  z-index: 15;
+  z-index: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-image: url(https://www.bebold.ch/img/home/presentation-anim.gif);
+}
+.computer img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: auto;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 1;
 }

@@ -147,7 +147,7 @@ const myheader = new AutoTyping({
     deleteDelay: 1500,
     typeInfinity: true,
     cursor: "|",
-    cursorColor: "#fff",
+    cursorColor: "#ccd6f6",
     cursorSpeed: 400,
   });
   myheader.init();
