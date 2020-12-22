@@ -196,6 +196,11 @@ img {
   z-index: 101;
   font-size: 1.5rem;
 }
+.logo-span {
+  font-size: 3.7rem;
+  color: var(--first-color);
+  margin-left: -5px;
+}
 
 .nav__link {
   transition: all 0.03s;
