@@ -276,6 +276,9 @@ img {
 }
 
 /* Home */
+.home {
+  height: 100vh;
+}
 .home__container {
   height: calc(100vh - var(--header-height));
   align-items: center;
@@ -289,7 +292,7 @@ img {
 .home__subtitle {
   font-size: 1.5rem;
   color: var(--first-color);
-  margin-bottom: var(--mb-4);
+  margin-bottom: var(--mb-2);
 }
 .home__img {
   width: 350px;
@@ -324,7 +327,7 @@ img {
   margin-bottom: -10px;
 }
 .about__img {
-  width: 280px;
+  width: 250px;
   border-radius: 0.5rem;
   justify-self: center;
 }
@@ -678,6 +681,9 @@ a svg {
     position: initial;
     margin-left: var(--mb-2);
   }
+  .about__img {
+    width: 250px;
+  }
 
   .section {
     padding-top: 8rem;
@@ -733,7 +739,7 @@ a svg {
       font-size: 2.3rem;
     }
     .about__img {
-      width: 300px;
+      width: 250px;
     }
 
     .about__container {
@@ -764,42 +770,42 @@ a svg {
   color: var(--first-color);
   font-size: 1.4rem;
 }
+.wave {
+  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s; /* Change to speed up or slow down */
+  animation-iteration-count: infinite; /* Never stop waving :) */
+  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  display: inline-block;
+  font-size: 20px;
+}
 
-.computer {
-  position: fixed;
-  top: 50%;
-  left: 70%;
-  width: 65%;
-  height: 65%;
-  opacity: 1;
-  -webkit-transform: translate(-50%, -50%) scale(1);
-  transform: translate(-50%, -50%) scale(1);
-  z-index: 0;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
 }
-.computer #gif {
-  position: absolute;
-  top: 48.5%;
-  left: 50%;
-  width: 50%;
-  padding-top: 32%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  background-size: cover;
-  z-index: 15;
-  z-index: 0;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  background-image: url(https://www.bebold.ch/img/home/presentation-anim.gif);
-}
-.computer img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  height: auto;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  z-index: 1;
+.innovate {
+  margin-bottom: 1rem;
+  word-spacing: 5px;
 }
